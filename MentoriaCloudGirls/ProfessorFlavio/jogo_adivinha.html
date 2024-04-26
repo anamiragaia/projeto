@@ -1,0 +1,47 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var numeroPensado = Math.round (Math.random()*100);
+
+    var tentativas = 1;
+
+    while (tentativas<=3) {
+
+        var chute = parseInt (prompt ("Digite seu chute!"));
+
+        if (chute == numeroPensado) {
+            mostra ("Você Acertou! o número pensado era" + numeroPensado);
+            break;
+            
+        } else { 
+            mostra ("Você ERROU");
+        }
+
+        tentativas++
+
+    }
+
+
+
+
+//console.log para testar qual o nuero que foi sorteado
+//if (chute != numeroPensado ) {
+//  mostra ("Você errou, o número pensado foi " + numeroPensado);
+//}
+
+//função Math.random () = gera um número aleatório
+
+</script>
+ 
